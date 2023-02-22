@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilo-->
+    <link rel="stylesheet" href="style.css">    
+    <!--Boosrtap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>To Do List :)</title>
+</head>
+<body>
+    <div>
+       <section class="container container-main">
+            <div class="row row-main">
+                <div class="col-2"></div>
+                <div class="col-8 main">                
+                    <div class="div-main">
+                        <ul>
+                            <h1 class="list-group-item">Check list</li>
+                        </ul>
+                    </div>                
+                    <div class="div-main">
+                        <ul class="list-group" id="listado">
+                        </ul>                
+                    </div>
+                    <button id="add">Nueva tarea</button>                               
+                </div>
+            <div class="col-2"></div>
+        </section>
+        <!--seccion popup-->                
+        <section id="popup-container" class="container popup_container">
+            <div class="row popup">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div>
+                        
+                        <div class="div-popup">
+                            <h2 class="title">Ingrese nueva tarea</h2>
+                            <br>
+                            <label for="text">Tarea: <input type="text" id="nuevaTarea" placeholder="Descripcion"></label>
+                        </div>                        
+                        <div class="div-popup">
+                            <h4>Tipo de tarea</h4>
+                            <div class="dropdown">                                
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>                                
+                            </div>                            
+                            <div class="div-popup">
+                                <h4>Prioridad</h4>
+                                <ul>
+                                    <li class="form-check">
+                                        <input type="radio">
+                                        <label for="radio"> Urgente</label> 
+                                    </li>
+                                    <li class="form-check">
+                                        <input type="radio">
+                                        <label for="radio"> Importante</label> 
+                                    </li>
+                                    <li class="form-check">
+                                        <input type="radio" >
+                                        <label for="radio"> Pendiente</label> 
+                                    </li>
+                                    <li class="form-check">
+                                        <input type="radio">
+                                        <label for="radio"> Sin apuros</label> 
+                                    </li>
+                                </ul> 
+                            </div>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                        <hr>
+                        <button id="close" class="margenes">Agregar</button>
+
+                    </div>
+                </div>
+                <div class="col-1"></div>           
+            </div>                            
+        </section>
+    </div>
+            
+
+<script src="/menu.js"></script>
+
+
+</body>
+</html>
