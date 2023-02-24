@@ -19,10 +19,18 @@ body{
 button{
     background-color: #47a386;
     border: 0px;
-    border-radius: 9px !important;
+    border-radius: 9px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     color: #ffff;
     padding: 10px 25px;
+}
+.btnInicio{
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+    padding: 20px 25px;
+    border-radius: 50%;
+        
 }
 
 
@@ -36,6 +44,8 @@ button{
     justify-content: center;
     align-items: center;
     min-width: 100vw;
+    margin: 0;
+    height: 100vh;
 }
 .row-main{
     width: 100%;
@@ -52,6 +62,7 @@ button{
     justify-content: flex-start;
     align-items: center;
     padding: 55px;
+    
 }
 
 .div-main{
@@ -70,7 +81,7 @@ button{
     left: 0;
     opacity: 0;
     height: 100vh;
-    width: 100vw;
+    min-width: 100vw;
 }
 
 .show{
@@ -88,6 +99,52 @@ button{
     padding: 35px;
 }
 .div-popup{
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.div-popup label{
+    display: flex;
+}
+.losradio{
+    display: flex;
+    list-style:none;
+}
+.radio{
+    margin: 10px;
+}
+ul li input{
+    display: none;
+}
+.btn-radio{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.Uno{
+    background-color: brown;
+}
+.Dos{
+    background-color:darkorange;
+}
+.Tres{
+    background-color:coral;
+}
+.Cuatro{
+    background-color:lightcoral;
+}
+/*esta parte no funciona*/
+.btn-radio::after{
+    content: '';
+    background-color: black;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    opacity: 0;
 }

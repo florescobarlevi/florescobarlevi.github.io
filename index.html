@@ -25,7 +25,7 @@
                         <ul class="list-group" id="listado">
                         </ul>                
                     </div>
-                    <button id="add">Nueva tarea</button>                               
+                    <button id="add" class="btnInicio"> + </button>                               
                 </div>
             <div class="col-2"></div>
         </section>
@@ -34,52 +34,52 @@
             <div class="row popup">
                 <div class="col-1"></div>
                 <div class="col-10">
-                    <div>
-                        
+                    <div>                        
                         <div class="div-popup">
                             <h2 class="title">Ingrese nueva tarea</h2>
                             <br>
-                            <label for="text">Tarea: <input type="text" id="nuevaTarea" placeholder="Descripcion"></label>
-                        </div>                        
-                        <div class="div-popup">
-                            <h4>Tipo de tarea</h4>
+                            <label for="text">Tarea:</label>
+                            <input type="text" id="nuevaTarea" placeholder="Nombre">
+                            <br>
+                            <label for="text">Tipo de tarea</label>
                             <div class="dropdown">                                
                                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown button
+                                    Seleccioná uno
                                 </button>
                                 <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" id="dropSalud" href="#">Salud</a></li>
+                                    <li><a class="dropdown-item" id="dropDomestic" href="#">Domésticas</a></li>
+                                    <li><a class="dropdown-item" id="dropTrabajo" href="#">Trabajo</a></li>
+                                    <li><a class="dropdown-item" id="dropRecreacion" href="#">Recreación</a></li>
+                                    <li><a class="dropdown-item" id="dropDeporte" href="#">Deportes</a></li>
+
                                 </ul>                                
-                            </div>                            
-                            <div class="div-popup">
-                                <h4>Prioridad</h4>
-                                <ul>
-                                    <li class="form-check">
+                            <br><br>                        
+                            <label for="text">Descripcion: </label>
+                            <textarea name="" id="descripcion" cols="30" rows="10" placeholder="..."></textarea>                        
+                            <label for="text">Prioridad</label>
+                                <ul class="losradio">
+                                    <li class="radio">
                                         <input type="radio">
-                                        <label for="radio"> Urgente</label> 
+                                        <label for="label"><span class="btn-radio Uno"></span></label>
                                     </li>
-                                    <li class="form-check">
+                                    <li class="radio ">
                                         <input type="radio">
-                                        <label for="radio"> Importante</label> 
+                                        <label for="label"><span class="btn-radio Dos"></span></label>
                                     </li>
-                                    <li class="form-check">
+                                    <li class="radio ">
                                         <input type="radio" >
-                                        <label for="radio"> Pendiente</label> 
+                                        <label for="label"><span class="btn-radio Tres"></span></label> 
                                     </li>
-                                    <li class="form-check">
+                                    <li class="radio">
                                         <input type="radio">
-                                        <label for="radio"> Sin apuros</label> 
+                                        <label for="label"><span class="btn-radio Cuatro"></span></label>
                                     </li>
-                                </ul> 
+                                </ul>
                             </div>
                         </div>
-                        <div>
-                            
-                            
-                        </div>
                         <hr>
+                        <button id="cancel" class="margenes">Cancelar</button>
                         <button id="close" class="margenes">Agregar</button>
 
                     </div>
@@ -91,7 +91,6 @@
             
 
 <script src="/menu.js"></script>
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
